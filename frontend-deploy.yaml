@@ -5,7 +5,7 @@ metadata:
     app: frontend
   name: frontend
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: frontend
@@ -16,7 +16,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: nginx
+      - image: httpd
         name: nginx
         resources: {}
 status: {}
