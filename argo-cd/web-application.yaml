@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/AdhamAyad/argocd-app.git
     targetRevision: main
-    path: .
+    path: webserver
     #directory:
     #recurse: true
     #include: '*.yaml'
