@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: creative-operator
+  namespace: creative-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: creative-operator
+  template:
+    metadata:
+      labels:
+        app: creative-operator
+    spec:
+      serviceAccountName: creative-operator-sa
+      containers:
+        - name: operator
+          image: adham00/kubewatch:latest
+          imagePullPolicy: Never

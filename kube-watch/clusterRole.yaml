@@ -1,0 +1,11 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: creative-operator-role
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "events", "secrets"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["creative.app"]
+    resources: ["alertsenders", "alertreceivers"]
+    verbs: ["get", "list", "watch"]
