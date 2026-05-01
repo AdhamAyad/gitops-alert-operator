@@ -6,6 +6,6 @@ rules:
   - apiGroups: [""]
     resources: ["pods", "events", "secrets"]
     verbs: ["get", "list", "watch"]
-  - apiGroups: ["creative.app"]
+  - apiGroups: ["j-kube-watch.app"]
     resources: ["alertsenders", "alertreceivers"]
     verbs: ["get", "list", "watch"]

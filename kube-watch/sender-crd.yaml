@@ -1,9 +1,9 @@
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
-  name: alertsenders.creative.app
+  name: alertsenders.j-kube-watch.app
 spec:
-  group: creative.app
+  group: j-kube-watch.app
   names:
     kind: AlertSender
     plural: alertsenders
