@@ -17,4 +17,4 @@ spec:
       containers:
         - name: operator
           image: adham00/kubewatch:latest
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
