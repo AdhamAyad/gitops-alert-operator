@@ -133,4 +133,3 @@ spec:
 Both child applications are configured with ArgoCD's strict sync policies:
 - **Automated Pruning:** Any resource deleted from the Git repository will be automatically removed from the Kubernetes cluster.
 - **Self-Heal:** Any manual modifications made directly to the cluster resources will be automatically overwritten and reverted to the state defined in this Git repository.
-```
